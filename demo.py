@@ -3,8 +3,8 @@ from pca9685 import PCA9685
 from machine import I2C, Pin
 from servo import Servos
 
-sda = Pin(0)
-scl = Pin(1)
+sda = machine.Pin(0)
+scl = machine.Pin(1)
 id = 0
 i2c = I2C(id=id, sda=sda, scl=scl)
 
